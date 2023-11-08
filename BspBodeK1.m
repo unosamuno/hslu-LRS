@@ -28,7 +28,7 @@ xlabel('w [rad/s]')
 
 % Alternative Berechnung
 s=tf('s')
-G=k/(T1*s+1)
+G = K/(1+s*T1)
 
 figure(2);
 bode(G); grid on; zoom on;

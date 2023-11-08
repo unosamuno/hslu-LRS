@@ -24,4 +24,7 @@ figure(1);
 subplot(211);
 semilogx(w,20*log10(absG)); grid on; zoom on;
 xlabel('w [rad/s]');
-ylabel('abs(G) [dB]
+ylabel('abs(G) [dB]');
+
+figure(2);
+subplot(212);
