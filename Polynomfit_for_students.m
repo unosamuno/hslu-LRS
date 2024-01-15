@@ -5,7 +5,6 @@
 
 clc; clear all; close all;
 
-
 %Polynomfit
 OrderofPolyfit = 1;
 

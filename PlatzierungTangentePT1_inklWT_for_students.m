@@ -21,9 +21,6 @@ TimeStart = 100;  % [ms] <-TODO STUDENTS  bei Auslösung des Sprunges / Schritte
 Time632 = 4000; %[ms] <-TODO STUDENTS   tunen Sie den Zeitwert so dass die vertikale Linie die 63.2%-Linie (rot) auf dem PTx-Verlauf schneidet
 
 
-
-
-
 disp('file was loaded');
 
 %Zur besseren Darstellung auf dem plot
@@ -37,14 +34,12 @@ grid minor;
 plot(VoltagePump.*VerstaerkungsfaktorSchritt,'m'); %jeder einzelne Wert im Vektor wird mit dem Verstärkungsfaktor multipliziert
 
 
-
 %Identifikationsverfahren 3 für PT1-Elemente
 %Berechnung des 63.2% Wertes des "Endwert"
 Schritthoehe_y = (y_Ausgangsgroesse_Start - y_Ausgangsgroesse_Ende);
 Endwert632_y = ((Schritthoehe_y*0.632)+y_Ausgangsgroesse_Start);
 disp("63.2%");
 disp(Endwert632_y);
-
 
 
 xline(TimeStart,"k",'LineStyle','-');
